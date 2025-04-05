@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            min-height: 700px;
+            width: 100%;
+            background-image: linear-gradient(to right, rgb(16, 177, 80), rgb(14, 180, 144));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        #input,
+        #addBtn {
+            font-size: 16px;
+            padding: 7px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-weight: 600;
+        }
+
+        ul {
+            width: 270px;
+            padding: 0px;
+            margin: auto;
+
+        }
+
+        ul:first-child {
+            margin-top: 100px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+
+        li button {
+            padding: 5px;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do list App</h1>
+        <input type="text" placeholder="Enter list" id="input">
+        <button id="addBtn">Add</button>
+        <ul>
+            <li>Eat <button class="delBtn">Delete</button></li>
+            <li>Eat <button class="delBtn">Delete</button></li>
+
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
