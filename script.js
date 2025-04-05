@@ -17,12 +17,7 @@ function addList(){
    }
 }
 
-// let delBtns=document.querySelectorAll(".delBtn");
-// delBtns.forEach((delbtn)=>{
-//     delbtn.addEventListener("click",function(){
-//         console.log(delbtn.parentElement);
-//     })
-// })
+
 // for(delBtn of delBtns){
 //     delBtn.addEventListener("click",()=>{
 //         console.log("del btn clicked");
